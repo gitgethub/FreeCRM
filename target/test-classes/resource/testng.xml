@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Automation Test Suite" parallel="tests" thread-count="1">
+<listeners>
+<listener class-name="com.freecrm.qa.extentreports.Listener"></listener>
+</listeners>
+ <test name="FreeCRMTest">
+ <packages>
+            <package name="com.freecrm.qa.testcases" />
+        </packages>
+ </test>
+</suite>
